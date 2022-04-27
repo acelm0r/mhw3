@@ -1,0 +1,180 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    height: 6%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 2;
+}
+
+nav .logo {
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+}
+
+nav span {
+    font-family: 'Bebas Neue', serif;
+    line-height:normal;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    justify-content:center;
+    margin:auto;
+}
+
+nav .selected {
+    background-color: rgb(149, 10, 10);
+    height:fit-content;
+    width:fit-content;
+}
+
+nav .profile {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 20%;
+}
+
+header {
+    background: url(immagini/search.png);
+    background-size: auto;
+    position: relative;
+    height: 25rem;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+}
+
+header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+article {
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    margin-top: 1%;
+}
+
+h1 {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    top:auto;
+    margin-top: 5%;
+    bottom: 0px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(219, 0, 0, 0.8);
+    font-family: 'Bebas Neue', serif;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+
+@media (max-width: 500px){
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        height: 4%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        z-index: 2;
+    }
+
+    nav .selected {
+        background-color: rgb(149, 10, 10);
+        height:fit-content;
+        width:fit-content;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        background: url(immagini/search.png);
+        background-size: cover;
+        position: relative;
+        height: 15rem;
+        left: 1%;
+        right: 1%;
+        z-index: -1;
+    }
+
+    h1 {
+        font-family: 'Montserrat', serif;
+        font-weight: 400;
+        font-size: 1em;
+        color: whitesmoke;
+    }
+}
+
+
+
+/* AGGIUNTI PER IL MHW3 */
+
+form {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#risultati {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+#risultati div {
+    align-items: center;
+    display: flex;
+    margin: 1%;
+    border: 1px solid rgb(149, 10, 10);
+    padding: 10px;
+    width: 24rem;
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#risultati img {
+    width: 23rem;
+    height: 35rem;
+}
+
+
+#risultati span {
+    margin-top: 5%;
+    color: whitesmoke;
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 1rem;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer="true"></script>
+        <title>Netfflix - Search</title>
+    </head>
+
+    <body>
+        <nav>
+            <img class="logo" src="immagini/netfflix.png"/>
+            <span>Home</span>
+            <span>Serie TV</span>
+            <span>Film</span>
+            <span class="selected">Cerca</span>
+            <img class="profile" src="immagini/Netflix-avatar.png"/>
+        </nav>
+        <header></header>
+
+        <h1>Inserisci il titolo e il tipo di contenuto da cercare</h1>
+        <form name="cerca" id="cerca">
+            <label><input type='text' name='content' id='content'></label>
+            <select name="tipo" id="tipo">
+                <option value='film'>Film - IMDb</option>
+                <option value='serie_tv'>Serie TV - IMDb</option>
+                <option value='anime'>Anime - Kitsu</option>
+            </select>
+            <label>&nbsp;<input class="submit" type='submit'></label>
+        </form>
+        
+        <article id="risultati"></article>
+
+        
+        <footer> 
+            <div>Powered by Netfflix (non è un marchio registrato)</div>
+            <div>Carmelo Pillera · O46001367</div>
+            <div>Web Programming 2022</div>
+        </footer>
+    </body>
+</html>
